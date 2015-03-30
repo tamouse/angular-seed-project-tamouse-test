@@ -1,0 +1,58 @@
+@import "../variables";
+
+select {
+  font: $font-bodycopy;
+  color: $color-bodycopy;
+  outline: none;
+  border: 1px solid $color-light;
+  background-color: $color-white;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 2em;
+  padding: 0 $spacing-small;
+  vertical-align: middle;
+
+  &:not(:disabled):hover {
+    border-color: $color-action;
+  }
+
+  &:not(:disabled):focus {
+    border-color: $color-info;
+  }
+
+  &:disabled {
+    border-color: $color-bright;
+    color: $color-light;
+    background-image: none;
+  }
+
+  * {
+    background-color: $color-white;
+    color: $color-bodycopy;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: $image-down-arrow;
+  background-repeat: no-repeat;
+  background-position: right $spacing-small top 50%;
+  background-size: 1em;
+  padding-right: ($spacing-large);
+}
+
+@-moz-document url-prefix() {
+  select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding: ($spacing-default / 5) ($spacing-default) 0 $spacing-small;
+  }
+
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $color-bodycopy;
+  }
+}

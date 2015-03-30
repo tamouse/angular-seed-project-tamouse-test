@@ -1,0 +1,14 @@
+# IntelliJ and/or RubyMine ignores
+.idea/
+node_modules/
+build/
+/dist/
+cpi-client.iml
+.*.sw?
+.vagrant
+tmp
+test/helpers/l10n.js
+test-results.xml
+dist.tar.gz
+.DS_Store
+*.iml

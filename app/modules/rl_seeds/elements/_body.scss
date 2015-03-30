@@ -1,0 +1,26 @@
+@import "../variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: $font-bodycopy;
+  color: $color-bodycopy;
+  background-color: $color-white;
+  min-width: 1024px;
+}
+
+a {
+  color: $color-info;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+@import "../variables";
+
+thead {
+  font-weight: 700;
+  background-color: $color-bright;
+  border-bottom: 1px solid $color-light;
+  text-align: left;
+}
+
+td,
+th {
+  padding: $spacing-default / 1.5;
+}
+
+th,
+td {
+  vertical-align: top;
+}
+
+tr {
+  border-bottom: 1px solid #DDDDDD;
+}

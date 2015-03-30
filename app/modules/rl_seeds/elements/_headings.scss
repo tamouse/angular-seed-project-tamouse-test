@@ -1,0 +1,29 @@
+@import "../variables";
+
+h1,
+h2,
+h3 {
+  line-height: 100%;
+  margin-bottom: $spacing-default;
+  margin-top: $spacing-default;
+  color: $color-heading;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h1 > span {
+  font-weight: 700;
+  color: $color-muted;
+  font-size: 50%;
+}

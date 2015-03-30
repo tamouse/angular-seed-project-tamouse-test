@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../mixins";
+
+$primary-buttons: (
+        unquote('button:first-of-type'),
+        unquote('input[type="button"]:first-of-type'),
+        unquote('input[type="submit"]')
+);
+
+$reset-buttons: (
+        unquote('button[type="reset"]'),
+        unquote('input[type="reset"]')
+);
+
+$buttons: (
+        unquote('button'),
+        unquote('input[type="button"]'),
+        unquote('input[type="submit"]'),
+        unquote('input[type="reset"]')
+);
+
+#{$buttons} {
+  @include button($color-muted, $color-mid);
+}
+
+#{$primary-buttons} {
+  @include button-color($color-action);
+}
+
+#{$reset-buttons} {
+  @include button-color($color-danger);
+}

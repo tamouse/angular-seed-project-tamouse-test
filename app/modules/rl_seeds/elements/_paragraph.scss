@@ -1,0 +1,9 @@
+@import "../variables";
+
+p {
+  text-align: justify;
+
+  & + p {
+    margin-top: $spacing-default;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../variables";
+@import "../mixins";
+
+#{$inputs} {
+  font: $font-bodycopy;
+  font-size: 1em;
+  color: $color-bodycopy;
+  outline: none;
+  border: 1px solid $color-light;
+  background-color: $color-white;
+  margin: 0;
+  padding: 0;
+  min-height: 2em;
+  padding: 0 $spacing-small;
+  vertical-align: middle;
+  resize: none;
+
+  &:not(:disabled):hover {
+    border-color: $color-action;
+  }
+
+  &:not(:disabled):focus {
+    border-color: $color-info;
+  }
+
+  &:disabled {
+    //background-color: $color-light;
+    border-color: $color-bright;
+    color: $color-light;
+    @include placeholder {
+      color: $color-light;
+    }
+  }
+}
