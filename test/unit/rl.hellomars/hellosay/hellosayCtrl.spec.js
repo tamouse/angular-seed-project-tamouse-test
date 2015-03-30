@@ -1,4 +1,4 @@
-describe('SayHello Controller', function () {
+describe('Hellosay Controller', function () {
 
   var $scope;
   var mockRandomGreeting = {
@@ -14,7 +14,7 @@ describe('SayHello Controller', function () {
     // Inject our service so we can test it
     inject(function ($controller, $rootScope) {
       $scope = $rootScope.$new();
-      $controller('SayhelloCtrl', { $scope: $scope, RandomGreeting: mockRandomGreeting });
+      $controller('HellosayCtrl', { $scope: $scope, RandomGreeting: mockRandomGreeting });
     });
   }
 
