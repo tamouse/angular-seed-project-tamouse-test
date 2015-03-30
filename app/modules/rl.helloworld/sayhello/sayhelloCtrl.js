@@ -1,4 +1,4 @@
-angular.rlmodule('rl.helloworld.sayhello.SayhelloCtrl', ['rl.helloworld.initialize.Config', 'rl.helloworld.sayhello.RandomGreeting'])
+angular.rlmodule('rl.helloworld.sayhello.SayhelloCtrl', ['ui.router', 'rl.helloworld.initialize.Config', 'rl.helloworld.sayhello.RandomGreeting'])
   .config(function ($stateProvider) {
     $stateProvider.state('helloworld.sayhello', {
       url: '/sayhello',

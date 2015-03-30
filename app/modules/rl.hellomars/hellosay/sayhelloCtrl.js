@@ -1,4 +1,4 @@
-angular.rlmodule('rl.hellomars.hellosay.SayhelloCtrl', ['rl.hellomars.initialize.Config', 'rl.hellomars.hellosay.RandomGreeting'])
+angular.rlmodule('rl.hellomars.hellosay.SayhelloCtrl', ['ui.router', 'rl.hellomars.initialize.Config', 'rl.hellomars.hellosay.RandomGreeting'])
   .config(function ($stateProvider) {
     $stateProvider.state('hellomars.hellosay', {
       url: '/hellosay',
