@@ -1,13 +1,13 @@
-angular.rlmodule('rl.hellomars.hellosay.SayhelloCtrl', ['rl.hellomars.initialize.Config', 'rl.hellomars.hellosay.RandomGreeting'])
+angular.rlmodule('rl.hellomars.hellosay.HellosayCtrl', ['rl.hellomars.initialize.Config', 'rl.hellomars.hellosay.RandomGreeting'])
   .config(function ($stateProvider) {
     $stateProvider.state('hellomars.hellosay', {
       url: '/hellosay',
       data: { title: 'New Creative' },
-      templateUrl: 'modules/rl.hellomars/hellosay/sayhelloCtrl.html',
-      controller: 'SayhelloCtrl'
+      templateUrl: 'modules/rl.hellomars/hellosay/hellosayCtrl.html',
+      controller: 'HellosayCtrl'
     });
   })
-  .controller('SayhelloCtrl', function ($scope, Config, RandomGreeting) {
+  .controller('HellosayCtrl', function ($scope, Config, RandomGreeting) {
     $scope.hithere = '\'ello \'ello';
     $scope.Config = Config;
     $scope.newGreeting = function newGreeting() {

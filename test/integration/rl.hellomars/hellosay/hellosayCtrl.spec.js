@@ -1,18 +1,18 @@
 // Basic integration test - no mocks
-describe('SayHello Controller', function () {
+describe('Hellosay Controller', function () {
 
   var $scope;
 
   beforeEach(function () {
     // Load the module we're testing
-    module('rl.helloworld');
+    module('rl.hellomars');
   });
 
   function injectController() {
     // Inject our service so we can test it
     inject(function ($controller, $rootScope) {
       $scope = $rootScope.$new();
-      $controller('SayhelloCtrl', { $scope: $scope });
+      $controller('HellosayCtrl', { $scope: $scope });
     });
   }
 
