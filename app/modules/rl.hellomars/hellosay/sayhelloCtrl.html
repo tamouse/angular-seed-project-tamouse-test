@@ -4,13 +4,13 @@ Random Greeting:  {{ greeting }}<br>
 Untranslated Greeting:  {{ hithere }}
 <br>
 Translated Greeting (dynamic + filter):
-<b>{{ "sayhello." + hithere | translate }}</b>
+<b>{{ "hellosay." + hithere | translate }}</b>
 <br>
 Translated Greeting (static + filter):
-<b>{{ "sayhello.'ello 'ello" | translate }}</b>
+<b>{{ "hellosay.'ello 'ello" | translate }}</b>
 <br>
 Translated Greeting (static + directive):
-<b translate>sayhello.'ello 'ello</b>
+<b translate>hellosay.'ello 'ello</b>
 <p />
 
 This is a number: {{ 1000000 | number }}
