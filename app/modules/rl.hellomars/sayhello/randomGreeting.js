@@ -1,5 +1,5 @@
 // Load the rlConfig global variable in a more angular-way
-angular.rlmodule('rl.helloworld.sayhello.RandomGreeting', [])
+angular.rlmodule('rl.hellomars.sayhello.RandomGreeting', [])
   .factory('RandomGreeting', function () {
     var greetings = [
       'Hello',

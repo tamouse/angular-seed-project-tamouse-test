@@ -1,5 +1,5 @@
 # Project Modules
-This is my project modules.  All the stuff directly related to my project goes in here.
+This is a copy of rl.helloworld.  All the stuff directly related to my project goes in here.
 
 ## initialize/
 These files do setup tasks for my project.

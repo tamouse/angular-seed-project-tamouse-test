@@ -1,4 +1,4 @@
-angular.rlmodule('rl.helloworld.initialize.L10n', ['rl.l10n'])
+angular.rlmodule('rl.hellomars.initialize.L10n', ['rl.l10n'])
   .run(function (LocaleSettings) {
     // Set your initial locale
     LocaleSettings.locale('en');

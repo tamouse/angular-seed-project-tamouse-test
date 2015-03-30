@@ -1,6 +1,6 @@
-angular.rlmodule('rl.helloworld.initialize.DefaultRoute', ['ui.router', 'rl.helloworld.layout'])
+angular.rlmodule('rl.hellomars.initialize.DefaultRoute', ['ui.router', 'rl.hellomars.layout'])
 .config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/helloworld/sayhello');
+  $urlRouterProvider.otherwise('/hellomars/sayhello');
 })
 
 .run(function ($rootScope) {
